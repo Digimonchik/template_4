@@ -1,0 +1,12 @@
+@import 'Components/Header/header.scss';
+
+.main-page {
+    &__container {
+    width: 100%;
+    min-height: 100vh;
+    background: lightcoral;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}}
