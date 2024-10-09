@@ -1,16 +1,110 @@
 .header {
+
+
+    &__circle-lines {
+        width: 298px;
+        height: 298px;
+        background-color: rgba(0, 0, 0, 0);
+        position: absolute;
+        top: 600px;
+        border-radius: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        overflow: hidden;
+        flex-direction: column;
+        left: -114px;
+        transform: rotate(-25deg);
+        opacity: 50%;
+        &_line {
+            width: 100%;
+            height: 2px;
+            background: #FFB21E;
+        }
+    }
+    &__circle-blue {
+        width: 417px;
+        height: 417px;
+        position: absolute;
+        top: -82px;
+        left:-114px;
+        border-radius: 100%;
+        background: linear-gradient(-180deg, rgb(30, 109, 255) 22%, rgba(188,133,166,0) 100%);
+        transform: rotate(180deg);
+        opacity: 22%;
+         &::after {
+            width: 417px;
+            height: 417px;
+            content: '';
+            background: linear-gradient( -90deg, rgba(0, 0, 255, 0), rgba(0, 0, 255, 0) 49%, rgb(255, 255, 255) 51% );
+            position: absolute;
+         };
+
+    }
+
+    &__circle-yellow {
+        width: 417px;
+        height: 417px;
+        position: absolute;
+        top: -82px;
+        left:-114px;
+        border-radius: 100%;
+        background: linear-gradient(-180deg, rgba(255,178,30,1) 22%, rgba(188,133,166,0) 100%);
+        transform: rotate(180deg);
+        opacity: 22%;
+         &::after {
+            width: 417px;
+            height: 417px;
+            content: '';
+            background: linear-gradient( -90deg, rgba(0, 0, 255, 0), rgba(0, 0, 255, 0) 49%, rgb(255, 255, 255) 51% );
+            position: absolute;
+         };
+
+    }
+
+
+
+
     &__container {
         width: 100%;
         height: 889px;
         position: relative;
         z-index: 0;
-        border: 1px solid green;
+
     }
     &__navigation {
     width: 1200px;
-    background-color: green;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
     height: 50px;
-    margin: 50px auto;}
+    margin: 50px auto;
+    &_bar {
+        width: 688px;
+        height: 26px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    &_item {
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 26.04px;
+        text-align: center;
+    }
+    &_logo {
+font-family: "Questrial", sans-serif;
+// font-family: Georgia, 'Times New Roman', Times, serif;
+font-size: 48px;
+font-weight: 400;
+line-height: 49.44px;
+text-align: left;
+
+    }
+
+}
 
     &__content {
         margin-top: 100px;
