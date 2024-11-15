@@ -1,12 +1,17 @@
-@import 'Components/Header/header.scss';
-
+@import "Components/Header/header.scss";
+@import "Components/About/about.scss";
+@import "Components/Features/features.scss";
+@import "./Components/Spaces/spaces.scss";
+@import "./Components/Footer/footer.scss";
 .main-page {
-    &__container {
+  &__container {
     width: 100%;
     min-height: 100vh;
-    background: white; 
+    overflow: hidden;
+    background: white;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-}}
+  }
+}

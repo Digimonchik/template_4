@@ -1,0 +1,173 @@
+.about {width: 100%;
+height:660px;
+margin-top: 50px;
+padding: 0px;
+&__container {
+    margin: 0px 192px 0px 120px;
+    width: 1128px;
+    height: 463px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+&__text {
+    width: 666px;
+    height: 308px;
+    margin-top: 100px;
+    position: relative;
+
+    &_country {
+        margin: 0px;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 26.1px;
+        letter-spacing: 1px;
+        text-align: left;
+        position: relative;
+            &::after {
+                content: '';
+                width: 100px;
+                height: 2px;
+                top: 28px;
+                left: 0px;
+                background: linear-gradient(90deg, #1254FF 0%, rgba(188,133,166,0) 100%);
+                position: absolute;
+            }
+    }
+    &_circle-lines {
+        width: 218px;
+        height: 218px;
+        background-color: rgba(0, 0, 0, 0);
+        position: absolute;
+        right: -230px;
+        top: 180px;
+        border-radius: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        overflow: hidden;
+        flex-direction: column;
+        transform: rotate(-25deg);
+        opacity: 22%;
+        &_line {
+            width: 100%;
+            height: 2px;
+            background: #1254FF;
+        }
+    }
+    &_header {
+        font-size: 56px;
+        font-weight: 400;
+        margin-top: 13px;
+        margin-bottom: 0px;
+        line-height: 81.2px;
+        text-align: left;
+
+    }
+    &_description {
+        width: 100%;
+        height: 62px;
+        gap: 0px;
+        opacity: 60%;
+       font-size: 20px;
+       margin-top: 16px;
+       font-weight: 400;
+       line-height: 31px;
+       text-align: left;
+    }
+    &_button {
+        width: 282px;
+            height: 63px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            color: #1254FF;
+            margin-top: 32px;
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 31px;
+            text-align: left;
+    }
+}
+&__image {
+    height: 100%;
+    width: 414px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    background-size:cover;
+    position: relative;
+
+    &_semi-circle {
+        position: absolute;
+        width: 171px;
+        height: 171px;
+        top: 40px;
+        left: 50px;
+        
+        box-sizing: border-box;
+        transform: rotate(-30deg);
+        opacity: 22%;
+        background: linear-gradient(white, white) padding-box, linear-gradient( #314E97, #ffffff, rgb(255, 187, 0)) border-box;
+        border-radius: 50%;
+        border-color: linear-gradient(to right, #0bf, #262925) border-box;
+        border: 10px solid transparent;
+            &:after {
+                position: absolute;
+                top: -25px;
+                left: -30px;
+                width: 200px;
+                height: 200px;
+                box-sizing: border-box;
+                content: '';
+                background: linear-gradient(  rgba(0, 0, 255, 0), rgba(71, 71, 151, 0) 49%, white 49%, white 51%, rgb(255, 255, 255) 51% ); 
+                border-radius: 50%;
+          
+            }
+    }
+    &_dots {
+        width: 248px;
+        height: 200px;
+        padding: 0px;
+right: -40px;
+        top: 70px;
+        opacity: 22%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+         position: absolute;
+         &_dot {
+            align-self: center;
+            justify-self: center;
+            width: 8px;
+            height:8px;
+            border-radius: 50%;
+            background: #314E97;
+         }
+    }
+
+
+    &_circle-yellow {
+        width: 311px;
+        height: 311px;
+        position: absolute;
+        bottom: 0px;
+        left: 10px;
+        z-index: 0;
+        border-radius: 100%;
+        opacity: 22%;
+        transform: rotate(-45deg);
+        background: linear-gradient( rgba(255,178,30,1) 22%, rgba(188,133,166,0) 100%);
+    }
+    &_image {
+        width: 334px;
+        height: 341px;
+        margin-bottom: 30px;
+        border-radius: 50%;
+        background-image: url('./img_1.png');
+        background-size: 140%;
+        background-position-x: -50PX;
+        background-repeat: no-repeat;
+        z-index: 1;
+    }}
+}
